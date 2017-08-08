@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap4</title>
+  	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <!-- NAVIGATION -->
+
+    <%= render 'layouts/navigation' %>
+
+    <!-- END OF NAVIGATION -->
+
+    <!-- HEADER -->
+
+    <%= render 'layouts/header' %>
+
+    <!-- END OF HEADER -->
+
+    <!-- SOCIAL -->
+
+    <%= render 'layouts/social' %>
+
+    <!-- END OF SOCIAL -->
+
+
+    <!-- WHO -->
+
+    <%= render 'layouts/who' %>
+
+    <!-- END OF WHO -->
+
+    <!-- LATEST WORK -->
+
+    <%= render 'layouts/section-work' %>
+
+    <!-- END OF LATEST WORK -->
+
+    <!-- WHY -->
+
+    <%= render 'layouts/why' %>
+
+    <!-- END OF WHY -->
+
+    <!-- PRICING -->
+
+    <%= render 'layouts/pricing' %>
+
+    <!-- END OF PRICING -->
+
+    <%= render 'layouts/contact' %>
+
+
+    <!-- FOOTER -->
+
+    <%= render 'layouts/footer' %>
+
+    <%= yield %>
+
+
+  </body>
+
+</html>
