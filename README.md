@@ -1,24 +1,27 @@
-# README
+How to Add Bootstrap Gem to Rails Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Gemfile
 
-Things you may want to cover:
+gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'jquery-rails'
+gem "font-awesome-rails"
 
-* Ruby version
+Assets/Stylesheets/application.scss
 
-* System dependencies
+/*
+ *= require font-awesome
+ */
 
-* Configuration
+@import "bootstrap";
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
+Assets/Javascripts/Application.js
 
-* Services (job queues, cache servers, search engines, etc.)
+//= require jquery3
+//= require bootstrap
+//= require jquery_ujs
+//= require turbolinks
+//= require_tree .
 
-* Deployment instructions
 
-* ...
