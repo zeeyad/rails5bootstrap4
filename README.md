@@ -25,3 +25,6 @@ Assets/Javascripts/Application.js
 //= require_tree .
 
 
+
+Source https://github.com/twbs/bootstrap-rubygem
+
