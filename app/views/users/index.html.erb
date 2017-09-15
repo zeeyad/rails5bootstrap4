@@ -1,0 +1,92 @@
+<section id="section-work">
+  <div class="container">
+
+  	  
+          <%= form_for @user do |f| %>
+          <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="sr-only" class="col-form-label">Username</label>
+                  <div>
+                    <%= f.text_field :name, class: "form-control", placeholder: "Enter Username" %>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="sr-only" class="col-form-label">Password</label>
+                  <div>
+                    <%= f.password_field :age, class: "form-control", placeholder: "Enter Password" %>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="sr-only" class="col-form-label">Gender</label>
+                  <div>
+                    <%= f.collection_select :gender, Gender.order(:id), :id, :gendertype %>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Example single danger button -->
+             
+                
+              
+
+          <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="sr-only" class="col-form-label">Username</label>
+                  <div>
+                    <%= f.text_field :name, class: "form-control", placeholder: "Enter Username" %>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="sr-only" class="col-form-label">Password</label>
+                  <div>
+                    <%= f.password_field :age, class: "form-control", placeholder: "Enter Password" %>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="sr-only" class="col-form-label">Username</label>
+                  <div>
+                    <%= f.text_field :name, class: "form-control", placeholder: "Enter Username" %>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="sr-only" class="col-form-label">Password</label>
+                  <div>
+                    <%= f.password_field :age, class: "form-control", placeholder: "Enter Password" %>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-md-4 offset-md-5">
+            <%= f.submit(@user.new_record? ? 'Sign Up' : "Update Account", :class => "col-md-6 btn btn-outline-info btn-block") %>
+            <% end %>
+          </div>
+
+
+
+    <!-- END OF SECOND ROW OF CARD IMAGES -->
+
+  </div>
+
+  <!-- END OF CONTAINER -->
+
+</section>
