@@ -10,7 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170915060729) do
+ActiveRecord::Schema.define(version: 20170917043425) do
+
+  create_table "activities", force: :cascade do |t|
+    t.text "date"
+    t.text "time"
+  end
 
   create_table "genders", force: :cascade do |t|
     t.string "gendertype"

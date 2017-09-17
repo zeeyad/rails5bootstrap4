@@ -1,0 +1,32 @@
+<%= form_for @activity do |f| %>
+
+  <div class="row" style="margin-top: 200px;">
+    <div class="col-md-12">
+      <div class="form-group row">
+        <div class="col-2">
+          <label for="sr-only" class="col-form-label">Date</label>
+        </div>
+        <div class="col">
+          <%= f.text_field :date, class: 'datepicker', placeholder: "DD/MM/YYYY", style: "width: 100%" %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group row">
+        <div class="col-2">
+          <label for="sr-only" class="col-form-label">Time</label>
+        </div>
+        <div class="col bootstrap-timepicker">
+          <%= f.text_field :time, id: 'timepicker', class: 'form-control', style: "width: 100%" %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="col-md-4 offset-md-5">
+  <%= f.submit 'Submit', :class => "col-md-5 btn btn-outline-info btn-block" %>
+  <% end %>
+</div>

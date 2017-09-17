@@ -12,6 +12,8 @@ gem 'rails', '~> 5.1.1'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'jquery-rails'
 gem "font-awesome-rails"
+gem 'bootstrap-datepicker-rails'
+gem 'bootstrap-timepicker-rails'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
